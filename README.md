@@ -20,7 +20,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 
 *A Modern DFT + DMFT Computation Framework*
 
-* [Source](https://github.com/huangli712/Zen) (**Zen**)
+* [Source](https://github.com/huangli712/Zen) (**All-in-one package**)
 * [Source](https://github.com/huangli712/ZenCore) (**ZenCore**)
 * [Source](https://github.com/huangli712/ZenApps) (**ZenApps**)
 * [Source](https://github.com/huangli712/ZenTools) (**ZenTools**)
@@ -34,5 +34,5 @@ In addition, I also write some tools to facilitate my programming practice. They
 *A collection of useful shell scripts*
 
 
-* [Source](https://github.com/huangli712/hdev) (**hdev**)
+* [Source](https://github.com/huangli712/hdev)
 * [Documentation](projects/hdev/index.html)
