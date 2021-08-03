@@ -31,7 +31,7 @@ In addition, I also write some tools to facilitate my programming practice. They
 
 ## hdev
 
-*A collection of useful shell scripts*
+*A Collection of Useful Shell Scripts*
 
 
 * [Source](https://github.com/huangli712/hdev)
