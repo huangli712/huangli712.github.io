@@ -1,6 +1,6 @@
 ## Welcome
 
-I have developed quite a few numerical codes. Their documentations are collected and presented here.
+I have developed quite a few numerical codes. They can be used to explore the secrets and exotic properties of strongly correlated systems. Their source codes and documentations are collected and presented here.
 
 ## Flink
 
@@ -26,3 +26,13 @@ I have developed quite a few numerical codes. Their documentations are collected
 * [Source](https://github.com/huangli712/ZenTools) (**ZenTools**)
 * [Source](https://github.com/huangli712/Dyson) (**Dyson**)
 * [Documentation](projects/zen/index.html)
+
+In addition, I also write some tools to facilitate my programming practice. They are listed below.
+
+## hdev
+
+*A collection of useful shell scripts*
+
+
+* [Source](https://github.com/huangli712/hdev) (**hdev**)
+* [Documentation](projects/hdev/index.html)
