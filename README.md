@@ -14,7 +14,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 *Interacting Quantum Impurity Solver ToolKit*
 
 * [Source](https://github.com/huangli712/iQIST)
-* [Documentation](projects/iqist/index.html)
+* [Documentation](projects/iqist/index.html) (Somewhat outdated. To be updated.)
 
 ## Zen
 
@@ -25,7 +25,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 * [Source](https://github.com/huangli712/ZenApps) (**ZenApps**)
 * [Source](https://github.com/huangli712/ZenTools) (**ZenTools**)
 * [Source](https://github.com/huangli712/Dyson) (**Dyson**)
-* [Documentation](projects/zen/index.html)
+* [Documentation](projects/zen/index.html) (Not ready.)
 
 In addition, I also write some tools to facilitate my programming practice. They are listed below.
 
