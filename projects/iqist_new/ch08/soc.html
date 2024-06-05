@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Spin-orbit coupling · iQIST</title><meta name="title" content="Spin-orbit coupling · iQIST"/><meta property="og:title" content="Spin-orbit coupling · iQIST"/><meta property="twitter:title" content="Spin-orbit coupling · iQIST"/><meta name="description" content="Documentation for iQIST."/><meta property="og:description" content="Documentation for iQIST."/><meta property="twitter:description" content="Documentation for iQIST."/><script data-outdated-warner src="../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../search_index.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../index.html">iQIST</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../index.html">Home</a></li><li><a class="tocitem" href="../team.html">Team</a></li><li><a class="tocitem" href="../copy.html">Copyright</a></li><li><a class="tocitem" href="../thanks.html">Acknowledgements</a></li><li><span class="tocitem">Introduction</span><ul><li><a class="tocitem" href="../ch01/what.html">What&#39;s iQIST?</a></li><li><a class="tocitem" href="../ch01/motivation.html">Motivation</a></li><li><a class="tocitem" href="../ch01/components.html">Components</a></li><li><a class="tocitem" href="../ch01/policy.html">Policy</a></li></ul></li><li><span class="tocitem">Installation</span><ul><li><a class="tocitem" href="../ch02/obtain.html">Obtain</a></li><li><a class="tocitem" href="../ch02/uncompress.html">Uncompress</a></li><li><a class="tocitem" href="../ch02/directory.html">Directory structures</a></li><li><a class="tocitem" href="../ch02/envir.html">Compiling environment</a></li><li><a class="tocitem" href="../ch02/system.html">Compiling system</a></li><li><a class="tocitem" href="../ch02/inc.html">Explanation of make.inc</a></li><li><a class="tocitem" href="../ch02/full.html">Build iQIST at one step</a></li><li><input class="collapse-toggle" id="menuitem-6-8" type="checkbox"/><label class="tocitem" for="menuitem-6-8"><span class="docs-label">Build iQIST at multiple steps</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch02/multi.html">README</a></li><li><a class="tocitem" href="../ch02/solvers.html">Build quantum impurity solvers</a></li><li><a class="tocitem" href="../ch02/atomic.html">Build atomic eigenvalue problem solver</a></li><li><a class="tocitem" href="../ch02/docs.html">Build documentations</a></li></ul></li></ul></li><li><span class="tocitem">Getting started</span><ul><li><a class="tocitem" href="../ch03/config.html">Configure your system</a></li><li><a class="tocitem" href="../ch03/execute.html">Execute the codes</a></li><li><a class="tocitem" href="../ch03/profile.html">Profile the codes</a></li></ul></li><li><span class="tocitem">Quantum impurity solvers</span><ul><li><input class="collapse-toggle" id="menuitem-8-1" type="checkbox"/><label class="tocitem" for="menuitem-8-1"><span class="docs-label">Standard input files</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch04/in_ctqmc.html">solver.ctqmc.in</a></li><li><a class="tocitem" href="../ch04/in_hyb.html">solver.hyb.in</a></li><li><a class="tocitem" href="../ch04/in_umat.html">solver.umat.in</a></li><li><a class="tocitem" href="../ch04/in_eimp.html">solver.eimp.in</a></li></ul></li><li><input class="collapse-toggle" id="menuitem-8-2" type="checkbox"/><label class="tocitem" for="menuitem-8-2"><span class="docs-label">Standard output files</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch04/out_green.html">solver.green.dat</a></li><li><a class="tocitem" href="../ch04/out_weiss.html">solver.weiss.dat</a></li><li><a class="tocitem" href="../ch04/out_hybri.html">solver.hybri.dat</a></li><li><a class="tocitem" href="../ch04/out_grn.html">solver.grn.dat</a></li><li><a class="tocitem" href="../ch04/out_wss.html">solver.wss.dat</a></li><li><a class="tocitem" href="../ch04/out_hyb.html">solver.hyb.dat</a></li><li><a class="tocitem" href="../ch04/out_sgm.html">solver.sgm.dat</a></li><li><a class="tocitem" href="../ch04/out_hist.html">solver.hist.dat</a></li><li><a class="tocitem" href="../ch04/out_prob.html">solver.prob.dat</a></li><li><a class="tocitem" href="../ch04/out_nmat.html">solver.nmat.dat</a></li><li><a class="tocitem" href="../ch04/out_diag.html">solver.diag.dat</a></li><li><a class="tocitem" href="../ch04/out_stat.html">solver.status.dat</a></li></ul></li><li><input class="collapse-toggle" id="menuitem-8-3" type="checkbox"/><label class="tocitem" for="menuitem-8-3"><span class="docs-label">Parameters</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch04/p_isscf.html">isscf</a></li><li><a class="tocitem" href="../ch04/p_isbnd.html">isbnd</a></li><li><a class="tocitem" href="../ch04/p_isspn.html">isspn</a></li><li><a class="tocitem" href="../ch04/p_nband.html">nband</a></li><li><a class="tocitem" href="../ch04/p_nspin.html">nspin</a></li><li><a class="tocitem" href="../ch04/p_norbs.html">norbs</a></li><li><a class="tocitem" href="../ch04/p_ncfgs.html">ncfgs</a></li><li><a class="tocitem" href="../ch04/p_niter.html">niter</a></li><li><a class="tocitem" href="../ch04/p_mkink.html">mkink</a></li><li><a class="tocitem" href="../ch04/p_mfreq.html">mfreq</a></li><li><a class="tocitem" href="../ch04/p_nffrq.html">nffrq</a></li><li><a class="tocitem" href="../ch04/p_nbfrq.html">nbfrq</a></li><li><a class="tocitem" href="../ch04/p_nfreq.html">nfreq</a></li><li><a class="tocitem" href="../ch04/p_ntime.html">ntime</a></li><li><a class="tocitem" href="../ch04/p_nflip.html">nflip</a></li><li><a class="tocitem" href="../ch04/p_ntherm.html">ntherm</a></li><li><a class="tocitem" href="../ch04/p_nsweep.html">nsweep</a></li><li><a class="tocitem" href="../ch04/p_nwrite.html">nwrite</a></li><li><a class="tocitem" href="../ch04/p_nclean.html">nclean</a></li><li><a class="tocitem" href="../ch04/p_nmonte.html">nmonte</a></li><li><a class="tocitem" href="../ch04/p_ncarlo.html">ncarlo</a></li><li><a class="tocitem" href="../ch04/p_u.html">U</a></li><li><a class="tocitem" href="../ch04/p_uc.html">Uc</a></li><li><a class="tocitem" href="../ch04/p_uv.html">Uv</a></li><li><a class="tocitem" href="../ch04/p_jz.html">Jz</a></li><li><a class="tocitem" href="../ch04/p_js.html">Js</a></li><li><a class="tocitem" href="../ch04/p_jp.html">Jp</a></li><li><a class="tocitem" href="../ch04/p_mune.html">mune</a></li><li><a class="tocitem" href="../ch04/p_beta.html">beta</a></li><li><a class="tocitem" href="../ch04/p_part.html">part</a></li><li><a class="tocitem" href="../ch04/p_alpha.html">alpha</a></li></ul></li></ul></li><li><span class="tocitem">Atomic eigenvalue problem solver</span><ul><li><input class="collapse-toggle" id="menuitem-9-1" type="checkbox"/><label class="tocitem" for="menuitem-9-1"><span class="docs-label">Standard input files</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch05/input.html">README</a></li><li><a class="tocitem" href="../ch05/in_atom.html">atom.config.in</a></li><li><a class="tocitem" href="../ch05/in_cmat.html">atom.cmat.in</a></li><li><a class="tocitem" href="../ch05/in_emat.html">atom.emat.in</a></li><li><a class="tocitem" href="../ch05/in_tmat.html">atom.tmat.in</a></li></ul></li><li><span class="tocitem">Standard output files</span></li><li><input class="collapse-toggle" id="menuitem-9-3" type="checkbox"/><label class="tocitem" for="menuitem-9-3"><span class="docs-label">Parameters</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch05/parameters.html">README</a></li><li><a class="tocitem" href="../ch05/p_ibasis.html">ibasis</a></li><li><a class="tocitem" href="../ch05/p_ictqmc.html">ictqmc</a></li><li><a class="tocitem" href="../ch05/p_icu.html">icu</a></li><li><a class="tocitem" href="../ch05/p_icf.html">icf</a></li><li><a class="tocitem" href="../ch05/p_isoc.html">isoc</a></li><li><a class="tocitem" href="../ch05/p_nband.html">nband</a></li><li><a class="tocitem" href="../ch05/p_nspin.html">nspin</a></li><li><a class="tocitem" href="../ch05/p_norbs.html">norbs</a></li><li><a class="tocitem" href="../ch05/p_ncfgs.html">ncfgs</a></li><li><a class="tocitem" href="../ch05/p_nmini.html">nmini</a></li><li><a class="tocitem" href="../ch05/p_nmaxi.html">nmaxi</a></li><li><a class="tocitem" href="../ch05/p_uc.html">Uc</a></li><li><a class="tocitem" href="../ch05/p_uv.html">Uv</a></li><li><a class="tocitem" href="../ch05/p_jz.html">Jz</a></li><li><a class="tocitem" href="../ch05/p_js.html">Js</a></li><li><a class="tocitem" href="../ch05/p_jp.html">Jp</a></li><li><a class="tocitem" href="../ch05/p_ud.html">Ud</a></li><li><a class="tocitem" href="../ch05/p_jh.html">Jh</a></li><li><a class="tocitem" href="../ch05/p_mune.html">mune</a></li><li><a class="tocitem" href="../ch05/p_lambda.html">lambda</a></li></ul></li></ul></li><li><span class="tocitem">Auxiliary tools</span><ul><li><input class="collapse-toggle" id="menuitem-10-1" type="checkbox"/><label class="tocitem" for="menuitem-10-1"><span class="docs-label">Scripts</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../ch06/movie.html">u_movie.py</a></li><li><a class="tocitem" href="../ch06/atomic.html">u_atomic.py</a></li><li><a class="tocitem" href="../ch06/ctqmc.html">u_ctqmc.py</a></li><li><a class="tocitem" href="../ch06/reader.html">u_reader.py</a></li><li><a class="tocitem" href="../ch06/writer.html">u_writer.py</a></li></ul></li></ul></li><li><span class="tocitem">iQIST in action</span><ul><li><a class="tocitem" href="../ch07/story.html">Successful stories</a></li></ul></li><li><span class="tocitem">Inside iQIST</span><ul><li><input class="collapse-toggle" id="menuitem-12-1" type="checkbox"/><label class="tocitem" for="menuitem-12-1"><span class="docs-label">Basic theory and methods</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="basic.html">Outline</a></li><li><a class="tocitem" href="qim.html">Quantum impurity model</a></li><li><a class="tocitem" href="ct.html">Principles of continuous-time quantum Monte Carlo algorithm</a></li><li><a class="tocitem" href="hyb.html">Hybridization expansion</a></li></ul></li><li><input class="collapse-toggle" id="menuitem-12-2" type="checkbox" checked/><label class="tocitem" for="menuitem-12-2"><span class="docs-label">Algorithms</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="sig.html">Improved estimator for the self-energy function</a></li><li><a class="tocitem" href="truncation.html">Truncation approximation</a></li><li><a class="tocitem" href="lazy.html">Lazy trace evaluation</a></li><li><a class="tocitem" href="rng.html">Random number generator</a></li><li><a class="tocitem" href="atomic.html">Atomic eigenvalue solver</a></li><li><a class="tocitem" href="basis.html">Single particle basis</a></li><li class="is-active"><a class="tocitem" href="soc.html">Spin-orbit coupling</a></li><li><a class="tocitem" href="coulomb.html">Coulomb interaction matrix</a></li></ul></li><li><input class="collapse-toggle" id="menuitem-12-3" type="checkbox"/><label class="tocitem" for="menuitem-12-3"><span class="docs-label">Codes</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="platform.html">Development platform</a></li></ul></li></ul></li><li><a class="tocitem" href="../glossary.html">Glossary</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">Inside iQIST</a></li><li><a class="is-disabled">Algorithms</a></li><li class="is-active"><a href="soc.html">Spin-orbit coupling</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="soc.html">Spin-orbit coupling</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/huangli712/iQIST" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Spin-orbit-coupling"><a class="docs-heading-anchor" href="#Spin-orbit-coupling">Spin-orbit coupling</a><a id="Spin-orbit-coupling-1"></a><a class="docs-heading-anchor-permalink" href="#Spin-orbit-coupling" title="Permalink"></a></h1><p><strong>Spin-orbit interaction Hamiltonian</strong></p><p>The spin-orbit coupling (SOC) is implemented at atomic level,</p><p class="math-container">\[\begin{equation}
+\hat{H}_{\text{SOC}}=
+\lambda\sum_{i}\hat{l}_{i} \cdot \hat{s}_{i},
+\end{equation}\]</p><p>where <span>$\hat{l}$</span> is orbital angular momentum, and <span>$\hat{s}$</span> is spin angular momentum. In second quantization form,</p><p class="math-container">\[\begin{equation}
+\hat{H}_{\text{SOC}}=
+\lambda\sum_{\alpha\sigma,\beta\sigma^{\prime}}
+\left\langle
+\alpha\sigma\left| \hat{l} \cdot \hat{s} \right|\beta\sigma^{\prime}
+\right\rangle
+\hat{f}_{\alpha\sigma}^{\dagger}\hat{f}_{\beta\sigma^{\prime}},
+\end{equation}\]</p><p>where <span>$\alpha$</span> is orbital index and <span>$\sigma$</span> is spin index. We note that</p><p class="math-container">\[\begin{equation}
+\hat{l} \cdot \hat{s} =
+\frac{1}{2} \hat{l} \cdot \hat{\sigma}.
+\end{equation}\]</p><p>where <span>$\hat{\sigma}$</span> is the Pauli operator:</p><p class="math-container">\[\begin{equation}
+\hat{\sigma} = \hat{\sigma}_x \hat{x} +
+               \hat{\sigma}_y \hat{y} +
+               {\sigma}_z \hat{z}.
+\end{equation}\]</p><p class="math-container">\[\begin{equation}
+\hat{\sigma}_x = \left[
+\begin{array}{cc}
+0 &amp; 1 \\
+1 &amp; 0 \\
+\end{array}
+\right],~
+\hat{\sigma}_y = \left[
+\begin{array}{cc}
+0 &amp; -i \\
+i &amp; 0 \\
+\end{array}
+\right],~
+\hat{\sigma}_z = \left[
+\begin{array}{cc}
+1 &amp; 0 \\
+0 &amp; -1 \\
+\end{array}
+\right].
+\end{equation}\]</p><p>Now the question is how to write down the matrix elements for <span>$\hat{l} \cdot \hat{\sigma}$</span>.</p><p class="math-container">\[\begin{equation}
+\hat{l} \cdot \hat{\sigma} =
+\hat{l}_{x}\hat{\sigma}_{x}+
+\hat{l}_{y}\hat{\sigma}_{y}+
+\hat{l}_{z}\hat{\sigma}_{z}
+= \left[\begin{array}{cc}
+\hat{l}_{z} &amp; \hat{l}_{-}\\
+\hat{l}_{+} &amp; -\hat{l}_{z}
+\end{array}\right],
+\end{equation}\]</p><p>where <span>$\hat{l}_{\pm}=\hat{l}_{x}\pm\hat{l}_{y}$</span>. It is easy to prove that Eq.(6) can be rewritten as</p><p class="math-container">\[\begin{equation}
+\hat{l} \cdot \hat{\sigma} =
+\hat{l}_{+}\hat{\sigma}_{-}+
+\hat{l}_{-}\hat{\sigma}_{+}+
+\hat{l}_{z}\hat{\sigma}_{z},
+\end{equation}\]</p><p>where</p><p class="math-container">\[\begin{equation}
+\hat{\sigma}_+ = \left[
+\begin{array}{cc}
+0 &amp; 1 \\
+0 &amp; 0 \\
+\end{array}
+\right],~
+\hat{\sigma}_- = \left[
+\begin{array}{cc}
+0 &amp; 0 \\
+1 &amp; 0 \\
+\end{array}
+\right].
+\end{equation}\]</p><p><strong>Spin-orbit interaction in the complex orbital basis</strong></p><p>We just write down <span>$\hat{l}\cdot\hat{\sigma}$</span> in the complex spherical harmonics basis. The following relations are used to derive the matrix elements of the spin-orbit interaction:</p><p class="math-container">\[\begin{equation}
+\hat{l}_{\pm}Y_{l}^{m}=\sqrt{(l\mp m)(l\pm m+1)}Y_{l}^{m\pm1}.
+\end{equation}\]</p><p class="math-container">\[\begin{equation}
+\hat{\sigma}_+ |\uparrow\rangle = 0,~
+\hat{\sigma}_+ |\downarrow\rangle = |\uparrow\rangle.
+\end{equation}\]</p><p class="math-container">\[\begin{equation}
+\hat{\sigma}_- |\uparrow\rangle = |\downarrow\rangle,~
+\hat{\sigma}_- |\downarrow\rangle = 0.
+\end{equation}\]</p><p class="math-container">\[\begin{equation}
+\hat{\sigma}_z |\uparrow\rangle = 1,~
+\hat{\sigma}_z |\downarrow\rangle = -1.
+\end{equation}\]</p><p>For <span>$p$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccc|ccc}
+-1 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{2} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{2}\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\
+\sqrt{2} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \sqrt{2} &amp; 0 &amp; 0 &amp; 0 &amp; -1\\
+\end{array}
+\right]
+\end{equation}\]</p><p>For <span>$d$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccccc|ccccc}
+-2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{4} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{6} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{6} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{4}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\sqrt{4} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \sqrt{6} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \sqrt{6} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \sqrt{4} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -2\\
+\end{array}
+\right]
+\end{equation}\]</p><p>For <span>$f$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccccccc|ccccccc}
+-3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{6} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{10} &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{12} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{12} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{10} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{6}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\sqrt{6} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \sqrt{10} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \sqrt{12} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \sqrt{12} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{10} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{6} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -3\\
+\end{array}
+\right]
+\end{equation}\]</p><p>The following Julia&#39;s script can be used to generate the matrix elements for the spin-orbit interaction.</p><pre><code class="language-julia hljs"># To calculate the matrix representation of spin-orbit coupling in the
+# complex orbital basis.
+function calc_matrix(l::Int64)
+    println(&quot;Construct complex orbital basis for 𝑙 = $l&quot;)
+    COB = [] # To save the complex orbital basis
+    # m = -l, -l+1, ..., l-1, l
+    mlist = collect(-l:1:l)
+    for s in (&quot;up&quot;, &quot;down&quot;)
+        for m in mlist
+            push!(COB, [m, s])
+        end
+    end
+    #
+    for i in eachindex(COB)
+        m = COB[i][1]
+        s = COB[i][2] == &quot;up&quot; ? &quot;↑&quot; : &quot;↓&quot;
+        println(&quot;$i -&gt; | $l, $m, $s ⟩&quot;)
+    end
+
+    println(&quot;Calculate matrix elements of spin-orbit coupling&quot;)
+    for i in eachindex(COB)
+        lᵢ = l
+        mᵢ = COB[i][1]
+        sᵢ = COB[i][2]
+        for j in eachindex(COB)
+            lⱼ = l
+            mⱼ = COB[j][1]
+            sⱼ = COB[j][2]
+
+            # For l₊σ₋ term
+            T₁ = (lⱼ - mⱼ) * (lⱼ + mⱼ + 1)
+            m1ⱼ = mⱼ + 1
+            #
+            if sⱼ == &quot;up&quot;
+                s1ⱼ = &quot;down&quot;
+            else
+                s1ⱼ = &quot;null&quot;
+            end
+            #
+            if m1ⱼ == mᵢ &amp;&amp; sᵢ == s1ⱼ
+                println(&quot;SOC($i, $j) = sqrt(&quot;, T₁, &quot;)&quot;)
+            end
+
+            # For l₋σ₊ term
+            T₂ = (lⱼ + mⱼ)*(lⱼ - mⱼ + 1)
+            m2ⱼ = mⱼ - 1
+            #
+            if sⱼ == &quot;down&quot;
+                s2ⱼ = &quot;up&quot;
+            else
+                s2ⱼ = &quot;null&quot;
+            end
+            #
+            if m2ⱼ == mᵢ &amp;&amp; sᵢ == s2ⱼ
+                println(&quot;SOC($i, $j) = sqrt(&quot;, T₂, &quot;)&quot;)
+            end
+
+            # For lzσz term
+            T₃ = mⱼ * (sⱼ == &quot;up&quot; ? 1 : -1)
+            if mⱼ == mᵢ &amp;&amp; sᵢ == sⱼ
+                println(&quot;SOC($i, $j) = &quot;, T₃)
+            end
+        end
+    end
+end</code></pre><p><strong>Spin-orbit interaction in the <span>$\hat{j}^{2}-\hat{j}_{z}-\hat{l}^2-\hat{s}^2$</span> diagonal basis</strong></p><p>Since</p><p class="math-container">\[\begin{equation}
+\hat{j} = \hat{l} + \hat{s},
+\end{equation}\]</p><p class="math-container">\[\hat{j}^2 = \hat{l}^2 + \hat{s}^2 + 2\hat{l} \cdot \hat{s},\]</p><p class="math-container">\[\hat{l} \cdot \hat{\sigma} = 2 \hat{l} \cdot \hat{s}
+                           = \hat{j}^2 - \hat{l}^2 - \hat{s}^2,\]</p><p>thus, in the <span>$\hat{j}^{2}-\hat{j}_{z}-\hat{l}^2-\hat{s}^2$</span> diagonal basis, the matrix of <span>$\hat{l} \cdot \hat{\sigma}$</span> is diagonal. The diagonal element reads <span>$j(j+1) - l(l+1) - s(s+1)$</span>. Note that in this basis, <span>$j = l \pm \frac{1}{2}$</span> and <span>$s = \frac{1}{2}$</span>.</p><p>For <span>$p$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccc|ccc}
+-2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{array}
+\right]
+\end{equation}\]</p><p>For <span>$d$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccccc|ccccc}
+-3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2\\
+\end{array}
+\right]
+\end{equation}\]</p><p>For <span>$f$</span> system,</p><p class="math-container">\[\begin{equation}
+\hat{l}\cdot\hat{\sigma}=
+\left[
+\begin{array}{ccccccc|ccccccc}
+-4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; -4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; -4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3\\
+\end{array}
+\right]
+\end{equation}\]</p><p>Next, it is easy to transform the above matrices from the <span>$\hat{j}^{2}-\hat{j}_{z}-\hat{l}^2-\hat{s}^2$</span> diagonal basis to complex orbital basis. See <a href="basis.html">Single particle basis</a> for the transformation matrix.</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="basis.html">« Single particle basis</a><a class="docs-footer-nextpage" href="coulomb.html">Coulomb interaction matrix »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="auto">Automatic (OS)</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.1.0 on <span class="colophon-date" title="Thursday 30 May 2024 09:49">Thursday 30 May 2024</span>. Using Julia version 1.8.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>

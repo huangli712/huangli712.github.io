@@ -21,7 +21,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 *Interacting Quantum Impurity Solver ToolKit*
 
 * [Source](https://github.com/huangli712/iQIST)
-* [Documentation](projects/iqist/index.html) (Somewhat outdated. To be updated.)
+* [Documentation](projects/iqist_new/index.html) (New version. To be updated.)
 
 ## Zen
 
