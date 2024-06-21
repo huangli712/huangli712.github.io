@@ -3,16 +3,25 @@
 \hat{l}^{2}Y_{l}^{m}=l(l+1)Y_{l}^{m},
 \end{equation}\]</p><p class="math-container">\[\begin{equation}
 \hat{l}_{z}Y_{l}^{m}=mY_{l}^{m},
-\end{equation}\]</p><p>where <span>$l$</span> is the azimuthal quantum number (<span>$l = 0,~1,~2,~\cdots,~n-1$</span>), and <span>$m$</span> is the magnetic quantum number (<span>$m=-l,~-l+1,~\cdots,~l$</span>)<sup class="footnote-reference"><a id="citeref-1" href="#footnote-1">[1]</a></sup><sup class="footnote-reference"><a id="citeref-2" href="#footnote-2">[2]</a></sup>. The real spherical harmonics <span>$Y_{lm}$</span> are defined as</p><p class="math-container">\[\begin{gather}
+\end{equation}\]</p><p>where <span>$l$</span> is the azimuthal quantum number (<span>$l = 0,~1,~2,~\cdots,~n-1$</span>), and <span>$m$</span> is the magnetic quantum number (<span>$m=-l,~-l+1,~\cdots,~l$</span>)<sup class="footnote-reference"><a id="citeref-1" href="#footnote-1">[1]</a></sup><sup class="footnote-reference"><a id="citeref-2" href="#footnote-2">[2]</a></sup>. They are defined as follows:</p><p class="math-container">\[\begin{equation}
+Y^m_l(\theta,\phi) = \sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}}
+P^m_l(\cos{\theta}) e^{im\phi},
+\end{equation}\]</p><p>where <span>$\theta$</span> is taken as the polar (colatitudinal) coordinate with <span>$\theta \in [0,\pi]$</span>, and <span>$\phi$</span> as the azimuthal (longitudinal) coordinate with <span>$\phi \in [0,2\pi]$</span>, and <span>$P^m_l(z)$</span> is an associated Legendre polynomial.</p><p>The spherical harmonics are orthonormal</p><p class="math-container">\[\begin{equation}
+\int^{\pi}_{\theta = 0} \int^{2\pi}_{\phi = 0}
+Y^m_l(\theta,\phi) Y^{m&#39;*}_{l&#39;}(\theta,\phi)~d\Omega = \delta_{ll&#39;} \delta_{mm&#39;},
+\end{equation}\]</p><p>where <span>$\delta_{ij}$</span> is the Kronecker delta and <span>$d\Omega = \sin(\theta) d\phi d\theta$</span>.</p><hr/><p><strong>Real Spherical Harmonics</strong></p><p>The real spherical harmonics <span>$Y_{lm}$</span> are defined as<sup class="footnote-reference"><a id="citeref-3" href="#footnote-3">[3]</a></sup></p><p class="math-container">\[\begin{gather}
 Y_{lm}=\begin{cases}
   \frac{i}{\sqrt{2}}\left(Y_{l}^{-|m|}-(-1)^{m}Y_{l}^{|m|}\right) &amp; \text{if}\ m&lt;0,\\
   Y_{l}^{0} &amp; \text{if}\ m=0,\\
   \frac{1}{\sqrt{2}}\left(Y_{l}^{-|m|}+(-1)^{m}Y_{l}^{|m|}\right) &amp; \text{if}\ m&gt;0.
 \end{cases}
-\end{gather}\]</p><p>The spherical harmonics are orthonormal</p><p class="math-container">\[\begin{equation}
-\int^{\pi}_{\theta = 0} \int^{2\pi}_{\phi = 0}
-Y^m_l Y^{m&#39;*}_{l&#39;} d\Omega = \delta_{ll&#39;} \delta_{mm&#39;},
-\end{equation}\]</p><p>where <span>$\delta_{ij}$</span> is the Kronecker delta and <span>$d\Omega = \sin(\theta) d\phi d\theta$</span>.</p><hr/><p><strong>Spinor spherical harmonics</strong></p><p>The spinor spherical harmonics <span>$\Omega^l_{jm_j}(\theta,\phi)$</span> are eigenstates of the operators <span>$\hat{j}^2$</span>, <span>$\hat{j}_z$</span>, <span>$\hat{l}^2$</span>, and <span>$\hat{s}^2$</span>,</p><p class="math-container">\[\begin{equation}
+\end{gather}\]</p><p>The corresponding inverse equations defining the complex spherical harmonics <span>$Y^m_l$</span> in terms of the real spherical harmonics <span>$Y_{lm}$</span> read:</p><p class="math-container">\[\begin{gather}
+Y_{l}^{m}=\begin{cases}
+  \frac{1}{\sqrt{2}}\left(Y_{l|m|}-iY_{l,-|m|}\right) &amp; \text{if}\ m&lt;0,\\
+  Y_{l0} &amp; \text{if}\ m=0,\\
+  \frac{(-1)^m}{\sqrt{2}}\left(Y_{l|m|}+iY_{l,-|m|}\right) &amp; \text{if}\ m&gt;0.
+\end{cases}
+\end{gather}\]</p><p>The real spherical harmonics <span>$Y_{lm}$</span> are sometimes known as tesseral spherical harmonics. These functions have the same orthonormality properties as the complex ones <span>$Y_{l}^{m}$</span>.</p><hr/><p><strong>Spinor spherical harmonics</strong></p><p>The spinor spherical harmonics <span>$\Omega^l_{jm_j}(\theta,\phi)$</span> are eigenstates of the operators <span>$\hat{j}^2$</span>, <span>$\hat{j}_z$</span>, <span>$\hat{l}^2$</span>, and <span>$\hat{s}^2$</span>,</p><p class="math-container">\[\begin{equation}
 \hat{j}^2 \Omega^l_{jm_j} = j (j + 1) \Omega^l_{jm_j},
 \end{equation}\]</p><p class="math-container">\[\begin{equation}
 \hat{j}_z \Omega^l_{jm_j} = m_j \Omega^l_{jm_j},
@@ -26,7 +35,7 @@ Y^m_l Y^{m&#39;*}_{l&#39;} d\Omega = \delta_{ll&#39;} \delta_{mm&#39;},
 \end{equation}\]</p><p>For <span>$j = l - \frac{1}{2} (l \neq 0)$</span>, <span>$m_j = m + \frac{1}{2}$</span>,</p><p class="math-container">\[\begin{equation}
 \Omega^l_{jm_j} = -\sqrt{\frac{l-m}{2l+1}} Y^m_l \chi_{\uparrow}
                 + \sqrt{\frac{l+m+1}{2l+1}} Y^{m+1}_l \chi_{\downarrow}.
-\end{equation}\]</p><hr/><p><strong>Real orbital basis</strong></p><p>The basis functions are the real spherical harmonics <span>$Y_{lm}$</span>.</p><p>For <span>$p$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-3" href="#footnote-3">[3]</a></sup></p><p class="math-container">\[\begin{equation}
+\end{equation}\]</p><hr/><p><strong>Real orbital basis</strong></p><p>The basis functions are the real spherical harmonics <span>$Y_{lm}(\theta,\phi)$</span>.</p><p>For <span>$p$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-4" href="#footnote-4">[4]</a></sup></p><p class="math-container">\[\begin{equation}
 \begin{split}
 &amp;
 |p_y, \uparrow \rangle,~
@@ -43,7 +52,7 @@ Y^m_l Y^{m&#39;*}_{l&#39;} d\Omega = \delta_{ll&#39;} \delta_{mm&#39;},
 |p_{z}\rangle =  Y_{10}=Y_{1}^{0},
 \end{equation}\]</p><p class="math-container">\[\begin{equation}
 |p_{x}\rangle  =  Y_{11}=\frac{1}{\sqrt{2}}\left(Y_{1}^{-1}-Y_{1}^{1}\right).
-\end{equation}\]</p><p>For <span>$d$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-3" href="#footnote-3">[3]</a></sup></p><p class="math-container">\[\begin{equation}
+\end{equation}\]</p><p>For <span>$d$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-4" href="#footnote-4">[4]</a></sup></p><p class="math-container">\[\begin{equation}
 \begin{split}
 &amp;
 |d_{xy}, \uparrow \rangle,~
@@ -68,7 +77,7 @@ d_{z^{2}} = Y_{20}=Y_{2}^{0},
 d_{xz} = Y_{21}=\frac{1}{\sqrt{2}}\left(Y_{2}^{-1}-Y_{2}^{1}\right),
 \end{equation}\]</p><p class="math-container">\[\begin{equation}
 d_{x^{2}-y^{2}} = Y_{22}=\frac{1}{\sqrt{2}}\left(Y_{2}^{-2}+Y_{2}^{2}\right).
-\end{equation}\]</p><p>For <span>$f$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-3" href="#footnote-3">[3]</a></sup></p><p class="math-container">\[\begin{equation}
+\end{equation}\]</p><p>For <span>$f$</span> system, the basis order is<sup class="footnote-reference"><a id="citeref-4" href="#footnote-4">[4]</a></sup></p><p class="math-container">\[\begin{equation}
 \begin{split}
 &amp;
 |f_{y(3x^2-y^2)}, \uparrow \rangle,~
@@ -229,7 +238,71 @@ T = \left[
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0     &amp; 0 &amp; -\frac{i}{\sqrt{2}} &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{\sqrt{2}} &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0     &amp; \frac{i}{\sqrt{2}} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{1}{\sqrt{2}} \\
 \end{array}
-\right]\]</p><hr/><p><strong>Transformation matrix from complex orbital basis to <span>$\hat{j}^{2}-\hat{j}_{z}-\hat{l}^2-\hat{s}^2$</span> diagonal basis</strong></p><p>For <em>p</em> system, the transformation matrix reads</p><p class="math-container">\[\begin{equation}
+\right]\]</p><p>The following Julia script is used to construct the complex orbital basis and the real orbital basis, and the transformation matrix between them.</p><pre><code class="language-julia hljs"># To calculate the transformation matrix from the complex orbital basis
+# to the real orbital basis.
+function calc_matrix(l::Int64)
+    println(&quot;Construct complex orbital basis for 𝑙 = $l&quot;)
+    COB = [] # To save the complex orbital basis
+    # m = -l, -l+1, ..., l-1, l
+    mlist = collect(-l:1:l)
+    for s in (&quot;up&quot;, &quot;down&quot;)
+        for m in mlist
+            push!(COB, [m, s])
+        end
+    end
+    #
+    for i in eachindex(COB)
+        m = COB[i][1]
+        s = COB[i][2] == &quot;up&quot; ? &quot;↑&quot; : &quot;↓&quot;
+        println(&quot;$i -&gt; | $l, $m, $s ⟩&quot;)
+    end
+
+    println(&quot;Construct real orbital basis for 𝑙 = $l&quot;)
+    RO = [] # To save the real orbital basis basis
+    ROB = [] # To save the detailed expressions for the real orbital basis
+    for s in (&quot;up&quot;, &quot;down&quot;)
+        for m in mlist
+            if m &lt; 0
+                b = [&quot;i/sqrt(2)&quot;, -abs(m), -(-1)^m, abs(m)]
+            elseif m == 0
+                b = [0]
+            elseif m &gt; 0
+                b = [&quot;1/sqrt(2)&quot;, -abs(m),  (-1)^m, abs(m)]
+            end
+            push!(RO, [m,s])
+            push!(ROB, b)
+        end
+    end
+    #
+    for i in eachindex(RO)
+        m = RO[i][1]
+        s = RO[i][2] == &quot;up&quot; ? &quot;↑&quot; : &quot;↓&quot;
+        println(&quot;$i -&gt; Y_{$l,$m} χ$s&quot;)        
+    end
+
+    println(&quot;Evaluate transformation matrix for 𝑙 = $l&quot;)
+    for m in eachindex(COB)
+        for n in eachindex(RO)
+            if COB[m][2] == RO[n][2] # their spins are the same
+                # for Y_{l0} case
+                if length(ROB[n]) == 1
+                    if COB[m][1] == ROB[n][1]
+                        println(&quot;T($m,$n) -&gt; 1&quot;)
+                    end
+                # for Y_{lm} case where m /= 0
+                else
+                    if COB[m][1] == ROB[n][2]
+                        println(&quot;T($m,$n) -&gt; &quot;, ROB[n][1])
+                    end
+                    if COB[m][1] == ROB[n][4]
+                        s = ROB[n][3] &lt; 0 ? &quot;-&quot; : &quot;&quot;
+                        println(&quot;T($m,$n) -&gt; $s&quot;, ROB[n][1])
+                    end
+                end
+            end
+        end
+    end
+end</code></pre><hr/><p><strong>Transformation matrix from complex orbital basis to <span>$\hat{j}^{2}-\hat{j}_{z}-\hat{l}^2-\hat{s}^2$</span> diagonal basis</strong></p><p>For <em>p</em> system, the transformation matrix reads</p><p class="math-container">\[\begin{equation}
 T = \left[
 \begin{array}{ccc|ccc}
 -\sqrt{\frac{2}{3}} &amp; 0 &amp; 0 &amp; \sqrt{\frac{1}{3}} &amp; 0 &amp; 0 \\
@@ -273,7 +346,7 @@ T = \left[
 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{\frac{5}{7}} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{\frac{2}{7}} &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{\frac{6}{7}} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sqrt{\frac{1}{7}} &amp; 0 \\
 \end{array}
-\right]\]</p><hr/><p><strong>Julia script for generating transformation basis</strong></p><p>The following Julia script is used to construct the complex orbital basis and the <span>$j^2-j_z$</span> basis, and the transformation matrix between them.</p><pre><code class="language-julia hljs"># To calculate the transformation matrix from the complex orbital basis
+\right]\]</p><p>The following Julia script is used to construct the complex orbital basis and the <span>$j^2-j_z$</span> basis, and the transformation matrix between them.</p><pre><code class="language-julia hljs"># To calculate the transformation matrix from the complex orbital basis
 # to the j²-jz basis.
 function calc_matrix(l::Int64)
     println(&quot;Construct complex orbital basis for 𝑙 = $l&quot;)
@@ -336,4 +409,4 @@ function calc_matrix(l::Int64)
             end
         end
     end
-end</code></pre><hr/><p><strong>Reference</strong></p><section class="footnotes is-size-7"><ul><li class="footnote" id="footnote-1"><a class="tag is-link" href="#citeref-1">1</a>曾谨言, 量子力学（卷1, 第四版）， 科学出版社， 2007。</li><li class="footnote" id="footnote-2"><a class="tag is-link" href="#citeref-2">2</a>D. A. Varshalovich, A. N. Moskalev, and V. K. Khersonskii, Quantum Theory of Angular Momentum, World Scientific, 1988.</li><li class="footnote" id="footnote-3"><a class="tag is-link" href="#citeref-3">3</a>The orbital orders are consistent with the definition of local basis used by VASP (see https://www.vasp.at/wiki/index.php/LOCPROJ), and the definition in HandWiki (see https://handwiki.org/wiki/Table_of_spherical_harmonics).</li></ul></section></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="atomic.html">« Atomic eigenvalue solver</a><a class="docs-footer-nextpage" href="soc.html">Spin-orbit coupling »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="auto">Automatic (OS)</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.1.0 on <span class="colophon-date" title="Thursday 30 May 2024 09:49">Thursday 30 May 2024</span>. Using Julia version 1.8.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+end</code></pre><hr/><p><strong>Reference</strong></p><section class="footnotes is-size-7"><ul><li class="footnote" id="footnote-1"><a class="tag is-link" href="#citeref-1">1</a>曾谨言, 量子力学（卷1, 第四版）， 科学出版社， 2007。</li><li class="footnote" id="footnote-2"><a class="tag is-link" href="#citeref-2">2</a>D. A. Varshalovich, A. N. Moskalev, and V. K. Khersonskii, Quantum Theory of Angular Momentum, World Scientific, 1988.</li><li class="footnote" id="footnote-3"><a class="tag is-link" href="#citeref-3">3</a>See https://handwiki.org/wiki/Physics:Spherical_harmonics.</li><li class="footnote" id="footnote-4"><a class="tag is-link" href="#citeref-4">4</a>The orbital orders are consistent with the definition of local basis used by VASP (see https://www.vasp.at/wiki/index.php/LOCPROJ), and the definition in HandWiki (see https://handwiki.org/wiki/Table_of_spherical_harmonics).</li></ul></section></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="atomic.html">« Atomic eigenvalue solver</a><a class="docs-footer-nextpage" href="soc.html">Spin-orbit coupling »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="auto">Automatic (OS)</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.1.0 on <span class="colophon-date" title="Friday 21 June 2024 16:31">Friday 21 June 2024</span>. Using Julia version 1.8.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
