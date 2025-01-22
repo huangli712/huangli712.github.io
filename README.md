@@ -16,6 +16,13 @@ I have developed quite a few numerical codes. They can be used to explore the se
 * [Source](https://github.com/huangli712/ACFlow)
 * [Documentation](projects/acflow/index.html)
 
+## ACGui
+
+*A Web-based Graphic User Interface for ACFlow*
+
+* [Source](https://github.com/huangli712/ACGui)
+* [Documentation](projects/acgui/index.html)
+
 ## ACTest
 
 *An Automatic Generator for Fermionic or Bosonic Correlation Functions*
