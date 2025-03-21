@@ -15,6 +15,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 
 * [Source](https://github.com/huangli712/ACFlow)
 * [Documentation](projects/acflow/index.html)
+* Version: v2.1.2-devel.250321
 
 ## ACGui
 
@@ -35,7 +36,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 *Interacting Quantum Impurity Solver ToolKit*
 
 * [Source](https://github.com/huangli712/iQIST)
-* [Documentation](projects/iqist_new/index.html) (In progress.)
+* [Documentation](projects/iqist_new/index.html) (In progress)
 
 ## Zen
 
