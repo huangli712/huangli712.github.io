@@ -23,6 +23,7 @@ I have developed quite a few numerical codes. They can be used to explore the se
 
 * [Source](https://github.com/huangli712/ACGui)
 * [Documentation](projects/acgui/index.html)
+* Version: v0.7.0-devel.250324
 
 ## ACTest
 
