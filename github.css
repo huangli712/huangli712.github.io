@@ -115,9 +115,11 @@ a:hover {
   .name,
   .version {
     font-weight: bold;
+    margin-bottom: 4px;
   }
 
   .desc {
     text-align: left;
+    margin-bottom: 4px;
   }
 }
