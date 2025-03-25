@@ -50,7 +50,8 @@ body {
   }
 
   .email,
-  .phone {
+  .institute,
+  .address {
     color: #999;
     font-weight: 300;
   }
