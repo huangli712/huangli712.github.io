@@ -19,6 +19,16 @@ body {
   padding-bottom: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 .container {
   max-width: 700px;
   background: #fff;
@@ -64,7 +74,7 @@ body {
     margin: 0px 10px;
   }
 
-  .desc {
+  .about {
     text-align: justify;
   }
 }
@@ -96,19 +106,10 @@ body {
     margin-bottom: 0;
   }
 
-  .left,
-  .right {
+  .left {
     vertical-align: top;
     display: inline-block;
-  }
-
-  .left {
     width: 80%;
-  }
-
-  .right {
-    text-align: right;
-    width: 39%;
   }
 
   .name,
@@ -116,18 +117,7 @@ body {
     font-weight: bold;
   }
 
-  a {
-    text-decoration: none;
-    color: #000;
-    font-style: italic;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: #000;
-  }
-
-  .text {
-    text-align: right;
+  .desc {
+    text-align: left;
   }
 }
