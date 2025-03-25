@@ -111,7 +111,8 @@ body {
     width: 39%;
   }
 
-  .name {
+  .name,
+  .version {
     font-weight: bold;
   }
 
