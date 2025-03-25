@@ -1,11 +1,4 @@
 
-## iQIST
-
-*Interacting Quantum Impurity Solver ToolKit*
-
-* [Source](https://github.com/huangli712/iQIST)
-* [Documentation](projects/iqist_new/index.html) (In progress)
-
 ## Zen
 
 *A Modern DFT + DMFT Computation Framework*
