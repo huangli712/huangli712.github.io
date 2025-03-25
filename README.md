@@ -1,7 +1,7 @@
 
 ## Zen
 
-*A Modern DFT + DMFT Computation Framework*
+**
 
 * [Source](https://github.com/huangli712/Zen) (**All-in-one package**)
 * [Source](https://github.com/huangli712/ZenCore) (**ZenCore**)
