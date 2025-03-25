@@ -125,27 +125,4 @@ body {
     text-decoration: underline;
     color: #000;
   }
-
-  .skills__item {
-    margin-bottom: 10px;
-  }
-
-  .skills__item .right {
-    input {
-      display: none;
-    }
-
-    label {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background: #c3def3;
-      border-radius: 20px;
-      margin-right: 3px;
-    }
-
-    input:checked + label {
-      background: #79a9ce;
-    }
-  }
 }
